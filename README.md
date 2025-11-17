@@ -7,3 +7,10 @@
 
 ## How to intercept your cuda code
   $ LD_PRELOAD=directoryto/cusched.so [your binary w/ cuda]
+
+## sample config file
+filename cusched.config  mode 0 for model training; model 1 for online scheduling
+mode=1
+period=66666666
+realtimecalls=141
+confidence=0.95
